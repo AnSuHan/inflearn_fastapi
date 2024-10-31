@@ -5,9 +5,10 @@ from sqlalchemy.orm import Session
 from db_model import GangnamguPopulatationDbModel
 from schema import GangnamguPopulation
 
-app = APIRouter(prefix="/v1/gangnamgu-population", tags={'DB'})
+app = APIRouter(prefix="/v1/logic", tags=["Logic"])
 
-#pip install psycopg2-binary
+#라우팅 테스트 용으로 작성된 코드
+#db_api.py와 동일
 
 # 전체 데이터 조회
 @app.get(str())
